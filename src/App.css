@@ -1,0 +1,103 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.mainContent{
+    text-align: center;
+}
+.mainTitle{
+    margin: 2rem auto 1rem;
+    font-size: 2rem;
+    font-family: var(--ff-base);
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-black);
+}
+.mainText{
+    margin: auto 2rem 2rem;
+    letter-spacing: 0;
+    font-size: .925rem;
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-gray);
+}
+.mainButton{
+    border: 1px solid var(--clr-neutral-black);
+    background-color: var(--clr-neutral-black);
+    border-radius: 10px ;
+    padding: 10px 25px;
+    text-transform: none;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-white);
+}
+.mainButton:hover{
+    background-color: var(--clr-neutral-white);
+    color: var(--clr-neutral-black);
+}
+.heroImage img{
+    display: block;
+    max-width: 100%;
+}
+.clientRow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: .5rem;
+    margin: 3rem auto;
+}
+.clientItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clientItem img{
+    width: 75%;
+}
+
+@media (min-width:768px){
+    .main{
+        width: 100vw;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+    }
+    .mainContent{
+        text-align: left;
+        max-width: 600px;
+        min-width: 200px;
+        margin-left: 2rem;
+    }
+    .mainInfo{
+        margin-top: 6rem;
+        max-width: 450px;
+    }
+    .mainTitle{
+        line-height: 1;
+        font-size: 4.25rem;
+    }
+    .clientRow{
+        margin: 3rem auto 0 ;
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+    .clientItem img{
+        width: 100%;
+    }
+    .mainText{
+        margin-left: 0;
+    }
+    .heroImage{
+        margin: auto 1rem;
+    }
+    .heroImage img{
+        margin-top: 1rem;
+        max-width: 400px;
+        width: 100%;
+        min-height: 500px;
+        object-fit: cover;
+        object-position: 90%;
+    }
+}
